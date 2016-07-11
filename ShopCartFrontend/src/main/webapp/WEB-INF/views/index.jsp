@@ -62,7 +62,7 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="<c:url value="/resources/img/very-large-bed.jpg"/>" alt="Bed">
+        <img src="<c:url value="/resources/img/very-large-bed.jpg"/>" alt="Bed" width="460" height="345">
         <div class="carousel-caption">
           <h3>Beds</h3>
           <p>Carefully Curated,Perfectly Coordinated </p>
@@ -70,7 +70,7 @@
       </div>
 
       <div class="item">
-        <img src="<c:url value="/resources/img/sofa1.jpg"/>" alt="Sofa">
+        <img src="<c:url value="/resources/img/sofa1.jpg"/>" alt="Sofa" width="460" height="345">
         <div class="carousel-caption">
           <h3>Sofas</h3>
           <p>The Perfect Antidote To Long,Hard Day </p>
@@ -78,21 +78,24 @@
       </div>
     
       <div class="item">
-        <img src="<c:url value="/resources/img/large-wardrobe-closet.jpg"/>" alt="Wardrobe">
+        <img src="<c:url value="/resources/img/large-wardrobe-closet.jpg"/>" alt="Wardrobe" width="460" height="345">
         <div class="carousel-caption">
           <h3>Wardrobes</h3>
           <p></p>
         </div>
       </div>
       <div class="item">
-        <img src="<c:url value="/resources/img/images.jpg"/>" alt="Dinning Table">
+        <img src="<c:url value="/resources/img/images.jpg"/>" alt="Dinning Table"width="460" height="345">
         <div class="carousel-caption">
           <h3>Dining Tables</h3>
           <p>Come Gather At Your Table</p>
         </div>
       </div>
     </div>
-
+<script src="js/bootstrap.min.js"></script>
+        <script>
+            $("#carousel").carousel();
+        </script>
     <!-- Left and right controls -->
     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
       <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
