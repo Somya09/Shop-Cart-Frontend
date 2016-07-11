@@ -11,11 +11,7 @@
 		<org.springframework-version>4.3.0.RELEASE</org.springframework-version>
 	</properties>
   <dependencies>
-  <dependency>
-			<groupId>com.niit</groupId>
-            <artifactId>ShopCart</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-		</dependency>
+  
 		
   <!-- Spring -->
 		<dependency>
@@ -83,12 +79,12 @@
     		<version>5.1.30</version>		
 		</dependency> 
   
+    
     <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
+			<groupId>com.niit</groupId>
+           <artifactId>ShopCartBackend</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+		</dependency>
   </dependencies>
   <build>
     <finalName>ShopCartFrontend</finalName>

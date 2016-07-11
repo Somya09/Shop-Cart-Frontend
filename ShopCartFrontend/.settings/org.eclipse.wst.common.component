@@ -5,6 +5,9 @@
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/java"/>
+        <dependent-module archiveName="ShopCartBackend-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ShopCartBackend/ShopCartBackend">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="context-root" value="ShopCartFrontend"/>
         <property name="java-output-path" value="/ShopCartFrontend/target/classes"/>
     </wb-module>
