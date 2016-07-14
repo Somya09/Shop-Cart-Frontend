@@ -10,12 +10,12 @@
 	<http auto-config="true">
 		<intercept-url pattern="/isValidUser" access="hasRole('ROLE_ADMIN')"/>
 		<form-login default-target-url="/adminHome" />
-		<logout logout-success-url="/ShoppersSite/"/>
+		<logout logout-success-url="/ShopCartFrontend/"/>
 	</http>
 	<authentication-manager>
 	  <authentication-provider>
 	    <user-service>
-		<user name="admin" password="admin" authorities="ROLE_ADMIN" />
+		<user name="id" password="password" authorities="ROLE_ADMIN" />
 	    </user-service>
 	  </authentication-provider>
 	</authentication-manager>
