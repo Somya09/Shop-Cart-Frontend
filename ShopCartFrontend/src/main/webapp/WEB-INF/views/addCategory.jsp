@@ -20,8 +20,9 @@
 				<td><input type="text" name="id"></td>
 			</tr>
 			<tr>
-				<td>Category Name:</td>
+			    <td>Category Name:</td>
 				<td><input type="text" name="name"></td>
+				
 			</tr>
 			<tr>
 				<td>Category Description:</td>

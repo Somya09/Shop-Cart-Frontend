@@ -15,7 +15,7 @@
 
 	<h2>Please fill the details</h2>
 
-	<form:form action="../register" method="post">
+	<form:form action="/register" method="post">
 		<table>
 			<tr>
 				<td>User ID:</td>
@@ -30,11 +30,12 @@
 				<td><input type="text" name="password"></td>
 			</tr>
 			<tr>
-				<td>Mobile No.:</td>
+				<td>Mobile No:</td>
 				<td><input type="text" name="mobile"></td>
 			</tr>
+			
 			<tr>
-				<td>Email Id:</td>
+				<td>Email:</td>
 				<td><input type="email" name="email"></td>
 			</tr>
 			<tr>

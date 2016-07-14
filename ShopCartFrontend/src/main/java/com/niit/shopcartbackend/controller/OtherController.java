@@ -34,7 +34,7 @@ public class OtherController {
 	}
 	@RequestMapping("/aboutus")
 	public ModelAndView showAbout(){
-		ModelAndView mv = new ModelAndView("/about");
+		ModelAndView mv = new ModelAndView("/aboutus");
 		return mv;
 	}
 	@RequestMapping("/contact")
@@ -42,9 +42,9 @@ public class OtherController {
 		ModelAndView mv = new ModelAndView("/contact");
 		return mv;
 	}
-	@RequestMapping("/secureLogin")
+	@RequestMapping("/loginUser")
 	public ModelAndView secureLogin(){
-		ModelAndView mv = new ModelAndView("/secureLogin");
+		ModelAndView mv = new ModelAndView("/loginUser");
 		return mv;
 	}
 }

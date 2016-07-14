@@ -18,7 +18,7 @@ public class UserController {
 	 	System.out.println("User Controller");
 	 	System.out.println(id+" "+password);
 	 	if(userDAOImpl.isValidUser(id, password, true)){
-	 		ModelAndView mv = new ModelAndView("/adminPage");
+	 		ModelAndView mv = new ModelAndView("/adminHome");
 	 		return mv;
 	 	}
 	 	else{

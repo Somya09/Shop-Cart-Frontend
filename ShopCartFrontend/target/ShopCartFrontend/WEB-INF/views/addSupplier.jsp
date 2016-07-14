@@ -13,7 +13,7 @@
 
 	<h2>ADD Supplier</h2>
 
-	<form:form action="../addSupplier" method="post">
+	<form:form action="/addSupplier" method="post">
 		<table>
 			<tr>
 				<td>Supplier ID:</td>

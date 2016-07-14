@@ -15,7 +15,7 @@
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
  
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Car Store</title>
+<title>Home Decor</title>
 </head>
 <body style="background-color:lightgrey;">
 <nav class="navbar navbar-inverse">
@@ -43,7 +43,7 @@ Please login with your credentials  <br>
 	<form:form action="isValidUser" method="post">
 		<table>
 			<tr>
-				<td>User Name:</td>
+				<td>Name:</td>
 				<td><input type="text" name="name"></td>
 			</tr>
 
@@ -51,10 +51,15 @@ Please login with your credentials  <br>
 				<td>Password:</td>
 				<td><input type="password" name="password" /></td>
 			</tr>
+			
+			
 			<tr>
 				<td><input type="submit" value="Login"></td>
 			</tr>
-
+     
+         <input type="radio" value="isUser" checked> User<br>
+         <input type="radio" value="isAdmin"> Admin<br>
+			
 		</table>
 
 

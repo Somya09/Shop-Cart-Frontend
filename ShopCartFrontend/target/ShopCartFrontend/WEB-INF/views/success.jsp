@@ -4,32 +4,15 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Shopping Cart</title>
+<title>Home Decor</title>
 </head>
 <body>
 
 Hello ${name}
 
 ${message}
-<h4>List of available categories</h4>
 
-<table width="50%">
-	<tr>
-	    <th align="left">S.No</th>
-		<th align="left">Id</th>
-		<th align="left">Name</th>
-		<th align="left">Description</th>
-		
-	</tr>
-	<c:forEach items="${categoryList}" var="category" varStatus="status">
-		<tr>
-			<td>${status.count}</td>
-			<td>${category.id}</td>
-			<td>${category.name}</td>
-			<td>${category.description}</td>
-			
-		</tr>
-	</c:forEach>
-</table>
+
+<a href="getAllCategories">  Get all categories</a>
 </body>
 </html>
