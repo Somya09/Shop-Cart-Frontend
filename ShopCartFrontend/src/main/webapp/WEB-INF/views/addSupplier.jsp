@@ -18,14 +18,17 @@
 			<tr>
 				<td>Supplier ID:</td>
 				<td><input type="text" name="id"></td>
+				<td><form:errors path="id" cssClass="error" /></td>
 			</tr>
 			<tr>
 				<td>Supplier Name:</td>
 				<td><input type="text" name="name"></td>
+				<td><form:errors path="name" cssClass="error" /></td>
 			</tr>
 			<tr>
 				<td>Supplier Address:</td>
 				<td><input type="text" name="address"></td>
+				<td><form:errors path="address" cssClass="error" /></td>
 			</tr>
 
 			<tr>

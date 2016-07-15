@@ -18,15 +18,17 @@
 			<tr>
 				<td>Category ID:</td>
 				<td><input type="text" name="id"></td>
+				<td><form:errors path="id" cssClass="error" /></td>
 			</tr>
 			<tr>
 			    <td>Category Name:</td>
 				<td><input type="text" name="name"></td>
-				
+				<td><form:errors path="name" cssClass="error" /></td>
 			</tr>
 			<tr>
 				<td>Category Description:</td>
 				<td><input type="text" name="description"></td>
+				<td><form:errors path="description" cssClass="error" /></td>
 			</tr>
 
 			<tr>

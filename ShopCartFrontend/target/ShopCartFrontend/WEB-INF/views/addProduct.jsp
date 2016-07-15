@@ -18,26 +18,32 @@
 			<tr>
 				<td>Product ID:</td>
 				<td><input type="text" name="id"></td>
+				<td><form:errors path="id" cssClass="error" /></td>
 			</tr>
 			<tr>
 				<td>Product Name:</td>
 				<td><input type="text" name="name"></td>
+				<td><form:errors path="name" cssClass="error" /></td>
 			</tr>
 			<tr>
 				<td>Product Description:</td>
 				<td><input type="text" name="description"></td>
+				<td><form:errors path="description" cssClass="error" /></td>
 			</tr>
 			<tr>
 				<td>Product Category:</td>
 				<td><input type="text" name="category"></td>
+				<td><form:errors path="category" cssClass="error" /></td>
 			</tr>
 			<tr>
 				<td>Product Supplier:</td>
 				<td><input type="text" name="supplier"></td>
+				<td><form:errors path="supplier" cssClass="error" /></td>
 			</tr>
 			<tr>
 				<td>Price:</td>
 				<td><input type="text" name="price"></td>
+				<td><form:errors path="price" cssClass="error" /></td>
 			</tr>
 
 			<tr>
