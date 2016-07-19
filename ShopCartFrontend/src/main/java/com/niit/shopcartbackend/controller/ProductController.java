@@ -28,7 +28,7 @@ public class ProductController {
 	private SupplierDAOImpl supplierDAOImpl;
 	
 	
-	@RequestMapping(value="/product", method=RequestMethod.GET)
+	@RequestMapping(value="/product", method=RequestMethod.POST)
 	public String listProducts(Model model){
 		model.addAttribute("product", new Product());
 		model.addAttribute("category", new Category());
@@ -39,7 +39,7 @@ public class ProductController {
 		return "product";
 	}
 	
-	@RequestMapping(value="product/view/all", method=RequestMethod.GET)
+	@RequestMapping(value="product/view/all", method=RequestMethod.POST)
 	public String showProducts(Model model){
 		model.addAttribute("product", new Product());
 		model.addAttribute("category", new Category());

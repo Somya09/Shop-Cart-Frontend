@@ -62,10 +62,10 @@ public class CategoryController {
 	}
 
 	@RequestMapping(value="category/view/{name}", method=RequestMethod.GET)
-	public String showGames(@PathVariable("name") String name, ModelMap model){
+	public String showItem(@PathVariable("name") String name, ModelMap model){
 		System.out.println("Category View");
 		model.addAttribute("category", new Category());
 		model.addAttribute("categoryList", this.categoryDAOImpl.getByName(name));
-		return "showGamesByCategory";
+		return "showByCategory";
 	}
 }

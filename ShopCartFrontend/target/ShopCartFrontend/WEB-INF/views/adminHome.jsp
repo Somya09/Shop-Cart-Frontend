@@ -1,6 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@page isELIgnored="false"%>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
@@ -12,67 +14,17 @@
 	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <title>Welcome Admin</title>
 <style>
-/*
- * Base structure
- */
-/* Move down content because we have a fixed navbar that is 50px tall */
-body {
-  padding-top: 50px;
+.carousel-inner>.item>img, body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: italic;
+	line-height: 1.8;
+	
 }
-/*
- * Global add-ons
- */
-.sub-header {
-  padding-bottom: 10px;
-  border-bottom: 1px solid #eee;
-}
-/*
- * Top navigation
- * Hide default border to remove 1px line.
- */
-.navbar-fixed-top {
-  border: 0;
-}
-/*
- * Sidebar
- */
-/* Hide for mobile, show later */
-.sidebar {
-  display: none;
-}
-@media (min-width: 768px) {
-  .sidebar {
-    position: fixed;
-    top: 51px;
-    bottom: 0;
-    left: 0;
-    z-index: 1000;
-    display: block;
-    padding: 20px;
-    overflow-x: hidden;
-    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
-    background-color: #f5f5f5;
-    border-right: 1px solid #eee;
-  }
-}
-/* Sidebar navigation */
-.nav-sidebar {
-  margin-right: -21px; /* 20px padding + 1px border */
-  margin-bottom: 20px;
-  margin-left: -20px;
-}
-.nav-sidebar > li > a {
-  padding-right: 20px;
-  padding-left: 20px;
-}
-.nav-sidebar > .active > a,
-.nav-sidebar > .active > a:hover,
-.nav-sidebar > .active > a:focus {
-  color: #fff;
-  background-color: #428bca;
+.margin {
+	margin-bottom: 45px;
 }
 .navbar {
-	padding-top: 7px;
+	padding-top: 15px;
 	padding-bottom: 15px;
 	border: 0;
 	border-radius: 0;
@@ -80,45 +32,47 @@ body {
 	font-size: 12px;
 	letter-spacing: 2px;
 }
-.container-fluid{padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}
-/*
- * Main content
- */
-.main {
-  padding: 20px;
+.bg-1 {
+	background-color: #1abc9c; /* Green */
+	
 }
-@media (min-width: 768px) {
-  .main {
-    padding-right: 40px;
-    padding-left: 40px;
-  }
+.unselectable {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
-.main .page-header {
-  margin-top: 0;
+h1 {
+	letter-spacing: 3px;
+	font-size: 50px;
+	
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: italic;
 }
-/*
- * Placeholder dashboard ideas
- */
-.placeholders {
-  margin-bottom: 30px;
-  text-align: center;
+h3 {
+font-size:30px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: italic;
+	letter-spacing: 1px;
 }
-.placeholders h4 {
-  margin-bottom: 0;
+ h4 {
+ font-size:30px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: italic;
+	letter-spacing: 1px;
 }
-.placeholder {
-  margin-bottom: 20px;
-}
-.placeholder img {
-  display: inline-block;
-  border-radius: 50%;
+p{
+font-size:20px;
+font-family: Arial, Helvetica, sans-serif;
+	font-style: italic;
 }
 </style>
 </head>
 <body>
-
-<nav class="navbar navbar-default navbar-fixed-top">
-	<div class="container">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle collapsed"
 				data-toggle="collapse" data-target="#navbar" aria-expanded="false"
@@ -127,29 +81,23 @@ body {
 					class="icon-bar"></span> <span class="icon-bar"></span> <span
 					class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="/ShopCart/"><font color="black"><strong>MyCorp
-						Inc.</strong></font></a>
-		</div>
-	</div>
-</nav>
- <div class="row">
-		<div class="col-sm-3 col-md-2 sidebar">
-			<ul class="nav nav-sidebar">
-				<li class="active"><a href="adminPage">Admin Panel<span
-						class="sr-only">(current)</span></a></li>
-				<li></li>
-				<li><a href="product">Products</a></li>
+			<a class="navbar-brand" href="/"><strong>Home
+						Decor</strong></font></a>
+		 </div>
+ <div id="navbar" class="collapse navbar-collapse">
+    <ul class="nav navbar-nav">
+                <li class="active"><a href="/">Home</a></li>
+				<li><a href="product">Product</a></li>
 				<li><a href="category">Category</a></li>
 				<li><a href="supplier">Supplier</a></li>
-				<li><a href="/ShopCart/">Site Home</a></li>
+				
 			</ul>
 		</div>
-		<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main"> 
-		<div class="container text-center">
-		<h1>Admin Home</h1>
+       </div>
+	</nav>	
+<div class="container text-center">
+		<h1><strong>Admin Home</strong></h1>
+		<h2><center>Welcome User:${userDetail}</center></h2>
 		</div>
-		</div>
-		</div>
-
 </body>
 </html>
