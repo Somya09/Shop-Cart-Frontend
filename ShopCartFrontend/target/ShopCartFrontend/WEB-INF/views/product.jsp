@@ -154,7 +154,7 @@ body {
 </style>
 </head>
 <body>
- <nav class="navbar navbar-inverse">
+	<nav class="navbar navbar-inverse">
   <div class="container-fluid">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle collapsed"
@@ -178,9 +178,10 @@ body {
 		</div>
        </div>
 	</nav>	
-	<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main"> 
-		<div class="container">
-	<h1>Add a Product</h1>
+			
+				<div class="container">
+
+					<h1>Add a Product</h1>
 					<c:url var="addAction" value="/product/add"></c:url>
 
 					<form:form class="form-signin" action="${addAction}" commandName="product">
@@ -304,15 +305,17 @@ body {
 											href="<c:url value='product/edit/${product.id}' />">Edit</a></td>
 										<td><a
 											href="<c:url value='product/remove/${product.id}' />">Delete</a></td>
+						                <td>
+                                            <div class="row-fluid form-inline">
+                                            <span class="glyphicon glyphicon-plus"></span>
+                                            </div>
+                                        </td>   			
 									</tr>
-							</c:forEach>
+								</c:forEach>
 							</tbody>
 						</table>
 				</div>
 				</c:if>
-			</div>
-		</div>
-	</div>
-	</div>
+
 </body>
 </html>

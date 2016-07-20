@@ -111,7 +111,7 @@ font-family: Arial, Helvetica, sans-serif;
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <li><a href="signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-      <li><a href="loginUser"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      <li><a href="signin"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
     </ul>
   </div>
 </nav>

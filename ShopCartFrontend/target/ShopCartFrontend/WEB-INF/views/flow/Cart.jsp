@@ -155,8 +155,10 @@ body {
 								<td>${cart.item.quantity}</td>
 								<td>${cart.item.price}</td>
 								<td>${cart.total}</td>
-								   
-							</tr>
+								<td><a href="<c:url value='item/edit/${item.id}' />">Edit</a></td>
+							<td><a href="<c:url value='item/remove/${item.id}' />">Delete</a></td>
+							<td><a href="BillingMode">Confirm</a></td>
+						     </tr>
 						</c:forEach>
 					</table>
 				</div>

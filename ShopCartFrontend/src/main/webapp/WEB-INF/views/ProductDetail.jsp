@@ -144,13 +144,21 @@ body {
 		<table class="table table-striped">
 							<thead>
 								<tr>
-									<th>Product_id</th>
 									<th>Product Name</th>
-									<th>Product Description</th>
+									<th>Product Category</th>
 									<th>Price</th>
-									<th>Edit</th>
-									<th>Delete</th>
+									<th>Info</th>
 								</tr>
 							</thead>
+							<c:forEach items="${productList}" var="product">
+							<tbody>
+							<td>${product.name}</td>
+							<td>${product.category.name}</td>
+							<td>${product.price}</td>
+							<td><a href="<c:url value='info/${product.id}' />" class="btn btn-info btn-lg">
+							<span class="glyphicon glyphicon-info-sign"></span></a></td>
+							</tbody>
+							</c:forEach>
+							</tbody>
 </body>
 </html>

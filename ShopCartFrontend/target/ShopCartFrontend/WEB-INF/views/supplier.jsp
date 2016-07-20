@@ -178,7 +178,7 @@ body {
 		</div>
        </div>
 	</nav>	
-	<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main"> 
+	 
 		<div class="container">
 		<h1>Add a Supplier</h1>
 	<div class="container">
@@ -275,7 +275,7 @@ body {
 	</div>
 	</c:if>
 	</div>
-</div></div>
+</div>
 </div>
 </body>
 </html>

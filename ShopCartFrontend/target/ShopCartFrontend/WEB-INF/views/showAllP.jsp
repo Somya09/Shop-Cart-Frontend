@@ -164,9 +164,7 @@ input[type=text]:focus {
 		</div>
        </div>
 	</nav>
-<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-			
-			<h3>Product List <input type="text" name="search" placeholder="Search.."></h3>
+		<h3>Product List <input type="text" name="search" placeholder="Search.."></h3>
 			<c:if test="${!empty productList}">
 				<div class="table-responsive">
 					<table class="table table-striped">
@@ -196,7 +194,7 @@ input[type=text]:focus {
 					</table>
 				</div>
 			</c:if>
-		</div>
+		
 	</div>
 </body>
 </html>

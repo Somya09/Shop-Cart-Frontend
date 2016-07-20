@@ -10,7 +10,7 @@
 
 	<http auto-config="true">
 		<intercept-url pattern="/adminHome" access="hasRole('ROLE_ADMIN')"/>
-		<form-login login-page="/signin" default-target-url="/adminHome" login-processing-url="/perform_login"
+		<form-login login-page="/loginUser" default-target-url="/adminHome" login-processing-url="/perform_login"
 		authentication-failure-url="/loginError" />
 		
 	<!-- <logout logout-success-url="/ShopCartFrontend/"/> -->	
