@@ -3,12 +3,12 @@
  "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
 <web-app>
+  
 
-	<display-name>Archetype Created Web Application</display-name>
-
+<display-name>Archetype Created Web Application</display-name>
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
-		<param-value>/WEB-INF/dispatcher-servlet.xml,/WEB-INF/application-context.xml,/WEB-INF/Spring-Security.xml</param-value>
+		<param-value>/WEB-INF/dispatcher-servlet.xml,/WEB-INF/Spring-Security.xml,/WEB-INF/application-context.xml</param-value>
 	</context-param>
 	<filter>
 		<filter-name>springSecurityFilterChain</filter-name>
@@ -21,7 +21,9 @@
 	</filter-mapping>
 	
 	<listener>
-		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+		<listener-class>
+			org.springframework.web.context.ContextLoaderListener
+		</listener-class>
 	</listener>
 	<servlet>
 		<servlet-name>dispatcher</servlet-name>
@@ -30,10 +32,9 @@
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>dispatcher</servlet-name>
-		<url-pattern>/,</url-pattern>
+		<url-pattern>/</url-pattern>
 	</servlet-mapping>
 
 
+
 </web-app>
-
-

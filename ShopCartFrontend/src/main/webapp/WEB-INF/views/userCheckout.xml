@@ -22,5 +22,9 @@
    
    
    <end-state id="endState" />
-   
+   <view-state id="invalidProcess">
+          <transition to="endState"></transition>
+        </view-state>
+        
+        <end-state id="cancalOrderProcess" view="orderprocesscancelled.jsp"/>
 </flow>
