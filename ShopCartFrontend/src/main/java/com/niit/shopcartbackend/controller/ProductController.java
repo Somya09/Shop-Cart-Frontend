@@ -28,7 +28,7 @@ public class ProductController {
 	private SupplierDAOImpl supplierDAOImpl;
 	
 	
-	@RequestMapping(value="/product", method=RequestMethod.POST)
+	@RequestMapping(value="/product", method=RequestMethod.GET)
 	public String listProducts(Model model){
 		model.addAttribute("product", new Product());
 		model.addAttribute("category", new Category());
@@ -51,7 +51,7 @@ public class ProductController {
 	}
 	
 	
-	@RequestMapping(value="/product/add", method=RequestMethod.POST)
+	@RequestMapping(value="/product/add", method=RequestMethod.GET)
     public String addProduct(@ModelAttribute("product") Product product){
 		Category category = categoryDAOImpl.getByName(product.getCategory().getName());
 		System.out.println("\n\n\n CID:"+category.getId());
